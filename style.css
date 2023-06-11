@@ -47,6 +47,10 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+.services .serv-content {
+    justify-content: center;
+    gap: 1rem;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -289,14 +293,14 @@ section .title::after{
     content: "My Projects";
 }
 .services .serv-content .card{
-    width: calc(50% - 8px);
+    width: calc(33% - 8px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
 }
 .services .serv-content .card:hover{
     background: #222;
@@ -326,6 +330,18 @@ section .title::after{
     height: 100%;
     object-fit: cover;
 }
+#view_moreBtn 
+{
+    cursor: pointer;
+}
+#view-more 
+{
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+#view-more.active {
+    display: block;
+} 
 .services .serv-content .card i{
     font-size: 50px;
     color: crimson;
